@@ -11,7 +11,7 @@ export class MemberService {
       id: 1,
       name: 'Stanislav',
       email: 'stastaransa1nt@gmail.com',
-      reg_date: new Date().toString(),
+      reg_date: new Date().toUTCString(),
     },
   ];
 

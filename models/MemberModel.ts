@@ -5,6 +5,6 @@ import { CreateMemberDTO } from '../src/DTO/CreateMemberDTO';
 export class MemberModel {
   member: TMember;
   constructor(data: CreateMemberDTO, id: number) {
-    this.member = { ...data, id, reg_date: Date.now().toString() };
+    this.member = { ...data, id, reg_date: new Date().toUTCString() };
   }
 }
