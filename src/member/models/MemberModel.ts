@@ -1,6 +1,6 @@
 import { NMember } from '../namespaces/Member';
 import TMember = NMember.TMember;
-import { CreateMemberDTO } from '../src/DTO/CreateMemberDTO';
+import { CreateMemberDTO } from '../DTO/CreateMemberDTO';
 
 export class MemberModel {
   member: TMember;

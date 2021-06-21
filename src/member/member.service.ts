@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { NMember } from '../../namespaces/Member';
+import { NMember } from './namespaces/Member';
 import TMember = NMember.TMember;
-import { MemberModel } from '../../models/MemberModel';
-import { CreateMemberDTO } from '../DTO/CreateMemberDTO';
+import { MemberModel } from './models/MemberModel';
+import { CreateMemberDTO } from './DTO/CreateMemberDTO';
 
 @Injectable()
 export class MemberService {

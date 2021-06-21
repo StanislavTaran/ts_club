@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Req, Body, Res } from '@nestjs/common';
 import { Request, Response } from 'express';
 import { MemberService } from './member.service';
-import { CreateMemberDTO } from '../DTO/CreateMemberDTO';
+import { CreateMemberDTO } from './DTO/CreateMemberDTO';
 
 @Controller('members')
 export class MemberController {

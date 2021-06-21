@@ -15,7 +15,8 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
+```
+##### Go to 
+```bash
+http://localhost:3000
 ```
