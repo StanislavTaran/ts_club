@@ -3,8 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="/styles/index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-{{ message }}
+<h1 class="members_title">Welcome to the club!</h1>
+
+<form id='member_form'>
+    <h2>New member</h2>
+    <label for="member_form_name">Name:</label>
+    <input
+            id="member_form_name"
+            name="name"
+            type="text" pattern="^[\.a-zA-Z ]*$"
+            title="Only Latin symbols, dots and spaces allowed"
+            required>
+    <br/>
+    <label for="member_form_email">Email:</label>
+    <input
+            id="member_form_email"
+            name="email"
+
+            required>
+    <div class="btn_container">
+        <button id="add_member_btn" type="button">Add</button>
+        <button id="reset_form" type="reset">Reset</button>
+    </div>
+</form>
+
+<h3 class="members_title">Members</h3>
+
+<table id="members_table">
+    <thead>
+    <td>Name</td>
+    <td>Email</td>
+    <td>Registration date</td>
+    </thead>
+
+    {{#each members}}
+        <tr>
+            <td>
+                {{name}}
+            </td>
+            <td>
+               {{email}}
+            </td>
+            <td>
+               {{reg_date}}
+            </td>
+        </tr>
+    {{/each}}
+
+</table>
+<script src="/js/index.js"></script>
 </body>
 </html>

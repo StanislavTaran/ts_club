@@ -1,0 +1,75 @@
+body{
+    padding: 0 15px;
+}
+
+.members_title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    margin: 5px;
+}
+
+input:valid {
+    border: 2px solid greenyellow;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: start;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    margin: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#add_member_btn{
+    background-color: #9ddb7d;
+}
+#reset_form{
+    background-color: crimson;
+}
+
+table {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: auto;
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+
+table td, table th {
+    border: 1px solid black;
+}
+
+thead {
+    font-weight: bold;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 15%;
+}
+
+thead th:nth-child(4) {
+    width: 35%;
+}
+
+th, td {
+    padding: 20px;
+}

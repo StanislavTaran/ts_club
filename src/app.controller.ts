@@ -4,11 +4,15 @@ import { MemberService } from './member/member.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    private readonly appService: AppService,
+    private readonly memberService: MemberService,
+  ) {}
 
   @Get()
   @Render('index')
   root() {
-    return { message: 'IT WORKS' };
+    const members = this.memberService.getAll();
+    return { members };
   }
 }

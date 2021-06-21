@@ -1,10 +1,10 @@
-import {NMember} from "../namespaces/Member";
-import TCreateData = NMember.TCreateData;
+import { NMember } from '../namespaces/Member';
 import TMember = NMember.TMember;
+import { CreateMemberDTO } from '../src/DTO/CreateMemberDTO';
 
 export class MemberModel {
-     member : TMember
-    constructor(data : TCreateData){
-        this.member = {...data, reg_date : Date.now().toString()}
-    }
+  member: TMember;
+  constructor(data: CreateMemberDTO, id: number) {
+    this.member = { ...data, id, reg_date: Date.now().toString() };
+  }
 }
